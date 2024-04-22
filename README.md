@@ -109,12 +109,12 @@
 
   // Form Submission Logic for Spreadsheet
   $.ajax({
-    url: "https://api.apispreadsheets.com/data/GNvxQkR0Quk58Eog/",
+    url: "https://api.apispreadsheets.com/data/Yvca3aER7VsTzjfO",
     type: "post",
     data: formData,
     headers: {
-      accessKey: "e2429bd5be4fe6cf7369c28debc3cc74",
-      secretKey: "fcd9ca7d9510256a569d3b6747b2776e",
+      accessKey: "974b270c55514d70f3a8f312b9895c75",
+      secretKey: "866789e29b05d61c4ddb0eeca61adbf7",
       "Content-Type": "application/x-www-form-urlencoded",
     },
     success: function () {
@@ -145,7 +145,7 @@
 
   // Form Submission Logic for Discord webhook
   $.ajax({
-    url: "https://discord.com/api/webhooks/1230963705131307030/ZqTCyQm6INnqmiF-DFEofJPvHhslvOiknher7Tqcb3U-Jjh1OcaK2d5sj09dTHVk8VN9", // Replace with your Discord webhook URL
+    url: "Fill Me", // Replace with your Discord webhook URL
     type: "post",
     contentType: "application/json",
     data: JSON.stringify(discordData),
@@ -188,11 +188,19 @@
   <form id="menuForm">
   <h3>Drinks</h3>
     <label>
-      <input type="checkbox" class="menu-item" data-price="2"> Soft Drink - $2
+      <input type="checkbox" class="menu-item" data-price="3"> Atom Soda - $3
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="3.25"> Atomic Mocha Shake - $3.20
+      <input type="checkbox" class="menu-item" data-price="3"> Creamy Jumbo Shake - $3
+      <input type="number" class="quantity" value="1" min="1">
+    </label>
+    <label>
+      <input type="checkbox" class="menu-item" data-price="3"> Bottled Water - $2
+      <input type="number" class="quantity" value="1" min="1">
+    </label>
+    <label>
+      <input type="checkbox" class="menu-item" data-price="2"> Coffee - $2
       <input type="number" class="quantity" value="1" min="1">
     </label>
 
@@ -200,122 +208,49 @@
 	
 	<h3>Food</h3>
     <label>
-      <input type="checkbox" class="menu-item" data-price="3"> Fries - $3
+      <input type="checkbox" class="menu-item" data-price="150"> Triple Burger - $150
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="4"> The C4 Burger - $4
+      <input type="checkbox" class="menu-item" data-price="250"> Bacon Triple Cheese Melt - $250
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="4"> The BlockBuster - $4
+      <input type="checkbox" class="menu-item" data-price="150"> Chicken Sanwhich - $150
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="5"> The Cluster Burger - $5
+      <input type="checkbox" class="menu-item" data-price="150"> Footlong Chilli dog - $150
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="7"> The MOAB - $7
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="7"> The FOAB - $7
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-
-	
-	<h3>Desserts</h3>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="4.20"> Metorite Ice Cream- $4.20
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="4.20"> Orangatang Ice Cream - $4.20
+      <input type="checkbox" class="menu-item" data-price="50"> Atom Fries - $50
       <input type="number" class="quantity" value="1" min="1">
     </label>
 
 
 
-	
-	<h3>Atomic Mocha Shake Special</h3>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="30"> 10 Coffess - $30
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="60"> 20 Coffess - $60
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="90"> 30 Coffess - $90
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="120"> 40 Coffess - $120
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="150"> 50 Coffess - $150
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="180"> 100 Coffess - $180
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
+
 
 
 	
 	<h3>Meal Deals</h3>
     <label>
-      <input type="checkbox" class="menu-item" data-price="15"> c4 meal  - $16
+      <input type="checkbox" class="menu-item" data-price="350"> Triple Burger  - $350
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="15"> blockbuster meal - $16
+      <input type="checkbox" class="menu-item" data-price="450"> Bacon Triple Cheese Melt - $450
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="18"> cluster/moab meal - $18
+      <input type="checkbox" class="menu-item" data-price="350"> Chicken Sandwhich - $350
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="22"> foab   - $22
+      <input type="checkbox" class="menu-item" data-price="350"> Footlong Chili Dog   - $350
       <input type="number" class="quantity" value="1" min="1">
     </label>
-	
-	<h3>Specials</h3>
- <label>
-      <input type="checkbox" class="menu-item" data-price="80"> 32 Ice Creams - $80
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-
-    
-
-	
-	<h3>Misc Items</h3>
-
-    <label>
-      <input type="checkbox" class="menu-item" data-price="12"> Limited Time Menu - $12
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="2"> Add Ons - $2
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-
-    	<h3>Delivery</h3>
-
-    <label>
-      <input type="checkbox" class="menu-item" data-price="50"> Delivery - $50
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-
-
-
-
-
-
 
 
 
@@ -331,9 +266,7 @@
 	<label for="discount">Select Discount:</label>
     <select id="discount" onchange="calculateTotals()">
       <option value="0">No Discount</option>
-      <option value="30">30% Discount (Employee Discount)</option>
-      <option value="25">25% Discount (LEO Discount)</option>
-      <option value="10">10% Discount (Mech Discount)</option>
+      <option value="0">0% Discount (Employee Discount)</option>
     </select>
 	
 	<div style="margin-bottom: 30px;"></div>
@@ -348,7 +281,7 @@
 	
 
     <p>Total: $<span id="total"></span></p>
-    <p>Commission (15%): $<span id="commission"></span></p>
+    <p>Commission (0%): $<span id="commission"></span></p>
 	
 	<div style="margin-bottom: 30px;"></div>
 
