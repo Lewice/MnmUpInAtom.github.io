@@ -196,7 +196,7 @@
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="3"> Bottled Water - $2
+      <input type="checkbox" class="menu-item" data-price="2"> Bottled Water - $2
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
